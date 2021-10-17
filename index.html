@@ -13,7 +13,7 @@
     
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="css/wowchemy.481af39c39ffd87b2d14f39943e7c723.css">
+        <link rel="stylesheet" href="css/wowchemy.css">
 
         <!-- Icon service by fontawesome -->
         <script src="https://kit.fontawesome.com/598164cef7.js" crossorigin="anonymous"></script>
@@ -24,8 +24,7 @@
     </head>
 
     <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper dark" data-new-gr-c-s-check-loaded="14.1032.0" data-gr-ext-installed="">
-        <!-- <script src="js/vendor/wowchemy-init.js"></script> -->
-
+        <script src="js/wowchemy-init.min.js"></script>
         <!-- Page header -->
         <div class="page-header">
             <!-- Navbar -->
@@ -35,7 +34,7 @@
                 <div class="container-xl">
                     <div class="d-none d-lg-inline-flex">
                         <a class="navbar-brand" href="#">
-                            <img src="icons/mylogo_dark_cn.svg" height="25">
+                            <img src="icons/mylogo_dark_cn.svg" height="25" class="img-dark">
                         </a>
                     </div>
                     
@@ -71,18 +70,30 @@
                     </div>
 
                     <!-- extra functionality, locate on right most side -->
+                    <!-- TBD: Or make it click-able, to switch the dark mode -->
                     <ul class="nav-icons navbar-nav flex-row ml-auto d-flexpl-md-2">   
-                        <!-- TBD: Or make it click-able, to switch the dark mode -->
-                        <!-- <div class="dropdown">
-                            <button class="dropbtn">
-                                <i class="fas fa-moon"></i>
-                            </button>
-                            <div class="dropdown-content">
-                              <a href="#">Light</a>
-                              <a href="#">Dark</a>
+                        <li class="nav-item dropdown theme-dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+                                <i class="fas fa-moon" aria-hidden="true"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item js-set-theme-light">
+                                <span>Light</span>
+                                </a>
+                                <a href="#" class="dropdown-item js-set-theme-dark dropdown-item-active">
+                                    <span>Dark</span>
+                                </a>
+                                <!-- <a href="#" class="dropdown-item js-set-theme-auto">
+                                    <span>Automatic</span>
+                                </a> -->
                             </div>
-                        </div> -->
+                        </li>
                     </ul>
+                    <!-- <div class="emoji-toggle emoji-happy">
+                        <input type="checkbox" id="toggle1" class="toggle">
+                        <div class="emoji"></div>
+                        <label for="toggle1" class="well"></label>
+                    </div> -->
                 </div>
             </nav>
         
@@ -133,7 +144,7 @@
                             <div class="col-12 col-lg-8">
                                 <h1>Welcome to my website</h1>
                                 <div class="article-style">
-                                    <p>I am a PhD candidate as well as a passionate informatician at the L3S Research Center at the Leibniz Universität Hannover. My research interests include Artificial Intelligence, Machine Learning, and Explainable AI(XAI). Specifically, my work focuses on developing methods for explaining behaviors of machine learning-/deep learning-based decision systems (black-boxes).</p>
+                                    <p>I am a PhD candidate at the L3S Research Center at the Leibniz Universität Hannover supervised by <a href="https://www.mi.fu-berlin.de/inf/groups/ag-KIML/members/Professoren/Ntoutsi.html">Prof. Ntoutsi</a>. My research interests include Artificial Intelligence, Machine Learning, and Explainable AI(XAI). Specifically, my work focuses on developing methods for explaining behaviors of machine learning-/deep learning-based decision systems (black-boxes).</p>
                                     <p>My research is supported by the State Ministry of Science and Culture of Lower Saxony, within the PhD Program "Responsible Artificial Intelligence in the Digital Society".</p>
                                 </div>
                                 <div class="row">
@@ -412,7 +423,7 @@
                         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
                             <i class="fas fa-copy"></i> Copy
                         </a>
-                        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+                        <a class="btn btn-outline-primary my-1 js-download-cite" href="https://scholar.googleusercontent.com/scholar.bib?q=info:USwPRhLs9oIJ:scholar.google.com/&output=citation&scisdr=CgXeJKX9EKXCkpORHpQ:AAGBfm0AAAAAYWWUBpS1Xc6u1aQjFENQk8m2JSgPjPz6&scisig=AAGBfm0AAAAAYWWUBmxZKwmfRV5_VUQnUPtQh3hhagGm&scisf=4&ct=citation&cd=-1&hl=en" target="_blank">
                             <i class="fas fa-download"></i> Download
                         </a>
                         <div id="modal-error"></div>
@@ -430,6 +441,7 @@
         <!-- <script src="./Academic_files/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js.下载"></script>
         <script src="./Academic_files/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js.下载"></script> -->
         <script src="js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
-        <script src="js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
+        <!-- <script src="js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script> -->
+        <script src="js/wowchemy.min.js"></script>
     </body>
 </html>
